@@ -1,0 +1,16 @@
+:root {
+    --footer-text: hsl(228, 45%, 44%);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 11px;
+    text-align: center;
+
+    & a {
+        color: var(--footer-text);
+    }
+}

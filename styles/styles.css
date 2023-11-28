@@ -71,6 +71,11 @@ input {
     border: 0.1rem solid var(--light-gray);
 }
 
+input:focus {
+    outline-color: var(--purple);
+    outline-width: 1px;
+}
+
 .error-message {
     color: var(--light-red);
     font-size: 1.4rem;

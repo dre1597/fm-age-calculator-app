@@ -88,8 +88,13 @@ const validateForm = (day, month, year) => {
 
   const lastDayOfMonth = getLastDayOfMonth(month, year);
 
-  if (day < 1 || day > lastDayOfMonth) {
+  if (day < 1) {
     errors.set('day', errorMessages.validDay);
+    hasError = true;
+  }
+
+  if (day > lastDayOfMonth) {
+    errors.set('day', errorMessages.validDate);
     hasError = true;
   }
 

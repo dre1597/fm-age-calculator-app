@@ -18,10 +18,6 @@ body {
     background-color: var(--off-white);
 }
 
-.error-color {
-    color: var(--light-red);
-}
-
 .container {
     display: flex;
     height: 100vh;
@@ -72,14 +68,15 @@ input {
 }
 
 input:focus {
-    outline-color: var(--purple);
-    outline-width: 1px;
+    border: 0.1rem solid var(--purple);
+    outline: none;
 }
 
 .error-message {
     color: var(--light-red);
     font-size: 1.4rem;
     font-style: italic;
+    margin-top: 1rem;
 }
 
 .submit-div {

@@ -11,31 +11,34 @@
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/fonts.css" rel="stylesheet">
     <link href="./styles/styles.css" rel="stylesheet">
+
+    <script defer src="./scripts/utils.js"></script>
+    <script defer src="./scripts/index.js"></script>
   </head>
   <body>
     <main class="container">
       <div class="card">
-        <form>
+        <form novalidate>
           <div class="inputs-container">
             <fieldset>
-              <label for="day">day</label>
+              <label for="day" id="day-label">day</label>
               <input id="day" name="day" placeholder="DD" type="number">
-              <span class="error-message"></span>
+              <span class="error-message" id="day-error"></span>
             </fieldset>
             <fieldset>
-              <label for="month">month</label>
+              <label for="month" id="month-label">month</label>
               <input id="month" name="month" placeholder="MM" type="number">
-              <span class="error-message"></span>
+              <span class="error-message" id="month-error"></span>
             </fieldset>
             <fieldset>
-              <label for="year">year</label>
+              <label for="year" id="year-label">year</label>
               <input id="year" name="year" placeholder="YYYY" type="number">
-              <span class="error-message"></span>
+              <span class="error-message" id="year-error"></span>
             </fieldset>
           </div>
           <div class="submit-div">
             <span class="horizontal-line"></span>
-            <button id="submit-button" type="submit">
+            <button id="submit-button" type="button">
               <img alt="submit button" src="./assets/images/icon-arrow.svg">
             </button>
           </div>

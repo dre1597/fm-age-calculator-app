@@ -6,14 +6,121 @@
     --light-gray: hsl(0, 0%, 86%);
     --smokey-gray: hsl(0, 1%, 44%);
     --off-black: hsl(0, 0%, 8%);
+    --transition: all 0.4s ease;
     --footer-text: hsl(228, 45%, 44%);
 }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--off-white);
+}
+
+.error-color {
+    color: var(--light-red);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--off-white);
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 2rem 2rem 20rem 2rem;
+    padding: 6rem;
+    width: 65rem;
+    height: 48rem;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.4rem;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    color: var(--smokey-gray);
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+input {
+    font-size: 3.2rem;
+    font-weight: bold;
+    width: 10rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    border: 0.1rem solid var(--light-gray);
+}
+
+.error-message {
+    color: var(--light-red);
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.submit-div {
+    text-align: start;
+}
+
+.horizontal-line {
+    width: 90%;
+    border-bottom: 2px solid var(--light-gray);
+    display: block;
+    margin: 5rem 0 0 0;
+}
+
+#submit-button {
+    background-color: var(--purple);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    right: -85%;
+    top: -50px;
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+#submit-button:hover {
+    background-color: var(--off-black);
+}
+
+.results-container {
+    margin-top: -2rem;
+    font-size: 9rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#years, #months, #days {
+    color: var(--purple);
+}
+
 
 .attribution {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 1rem 0;
+    padding: 1.6rem 0;
     font-size: 11px;
     text-align: center;
 

@@ -13,20 +13,49 @@
     <link href="./styles/styles.css" rel="stylesheet">
   </head>
   <body>
+    <main class="container">
+      <div class="card">
+        <form>
+          <div class="inputs-container">
+            <fieldset>
+              <label for="day">day</label>
+              <input id="day" name="day" placeholder="DD" type="number">
+              <span class="error-message"></span>
+            </fieldset>
+            <fieldset>
+              <label for="month">month</label>
+              <input id="month" name="month" placeholder="MM" type="number">
+              <span class="error-message"></span>
+            </fieldset>
+            <fieldset>
+              <label for="year">year</label>
+              <input id="year" name="year" placeholder="YYYY" type="number">
+              <span class="error-message"></span>
+            </fieldset>
+          </div>
+          <div class="submit-div">
+            <span class="horizontal-line"></span>
+            <button id="submit-button" type="submit">
+              <img alt="submit button" src="./assets/images/icon-arrow.svg">
+            </button>
+          </div>
+        </form>
 
-    Day
-    DD
+        <section class="results-container">
+          <div class="result">
+            <span id="years">--</span> <span id="years-text">years</span>
+          </div>
 
-    Month
-    MM
+          <div class="result">
+            <span id="months">--</span> <span id="months-text">months</span>
+          </div>
 
-    Year
-    YYYY
-
-    -- years
-    -- months
-    -- days
-
+          <div class="result">
+            <span id="days">--</span> <span id="days-text">days</span>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://www.frontendmentor.io/profile/dre1597" target="_blank">André Pereira</a>.

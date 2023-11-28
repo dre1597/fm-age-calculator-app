@@ -129,3 +129,54 @@ input:focus {
         color: var(--footer-text);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .card {
+        border-radius: 2rem 2rem 10rem 2rem;
+        padding: 5rem 2.5rem;
+        width: 25rem;
+        height: 35rem;
+    }
+
+    .inputs-container {
+        width: 100%;
+    }
+
+    fieldset {
+        margin-right: 0;
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    input {
+        font-size: 1.5rem;
+        width: 5rem;
+        padding: 1rem;
+    }
+
+    .error-message {
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+    }
+
+    .horizontal-line {
+        width: 100%;
+        margin: 6rem 0 0 0;
+    }
+
+    #submit-button {
+        right: -40%;
+        top: -40px;
+        padding: 2rem;
+    }
+
+    #submit-button img {
+        width: 2.5rem;
+    }
+
+    .results-container {
+        font-size: 4.5rem;
+    }
+}

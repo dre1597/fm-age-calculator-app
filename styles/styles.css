@@ -32,7 +32,7 @@ body {
     border-radius: 2rem 2rem 20rem 2rem;
     padding: 6rem;
     width: 65rem;
-    height: 48rem;
+    height: 53rem;
 }
 
 .inputs-container {
@@ -107,7 +107,6 @@ input:focus {
 }
 
 .results-container {
-    margin-top: -2rem;
     font-size: 9rem;
     font-weight: 900;
     font-style: italic;
